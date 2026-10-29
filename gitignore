@@ -1,0 +1,42 @@
+# Python: скомпилированные файлы и кэш
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# Упаковка и сборка Python-проектов
+build/
+dist/
+*.egg-info/
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.code-workspace
+
+# Операционная система
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Локальные настройки и секреты
+.env
+.env.*
+!.env.example
+
+# Временные файлы и резервные копии
+*.tmp
+*.temp
+*.bak
+*~
