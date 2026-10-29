@@ -1,0 +1,25 @@
+[project]
+name = "mac-address-lab2"
+version = "1.1.0"
+description = "Проверка и поиск синтаксически корректных MAC-адресов"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["main"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"

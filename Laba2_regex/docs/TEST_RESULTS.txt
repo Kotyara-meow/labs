@@ -1,0 +1,19 @@
+test_invalid_utf8_raises_unicode_error (test_main.TestFileReading.test_invalid_utf8_raises_unicode_error) ... ok
+test_missing_file_raises_clear_error (test_main.TestFileReading.test_missing_file_raises_clear_error) ... ok
+test_reads_utf8_file (test_main.TestFileReading.test_reads_utf8_file) ... ok
+test_does_not_match_inside_longer_address_like_text (test_main.TestMacSearch.test_does_not_match_inside_longer_address_like_text) ... ok
+test_duplicate_addresses_are_removed_case_insensitively (test_main.TestMacSearch.test_duplicate_addresses_are_removed_case_insensitively) ... ok
+test_finds_all_supported_formats (test_main.TestMacSearch.test_finds_all_supported_formats) ... ok
+test_no_matches_and_empty_text (test_main.TestMacSearch.test_no_matches_and_empty_text) ... ok
+test_invalid_addresses (test_main.TestMacValidation.test_invalid_addresses) ... ok
+test_non_string_input_returns_false (test_main.TestMacValidation.test_non_string_input_returns_false) ... ok
+test_supported_formats (test_main.TestMacValidation.test_supported_formats) ... ok
+test_http_error_is_wrapped (test_main.TestWebReading.test_http_error_is_wrapped) ... ok
+test_network_error_is_wrapped (test_main.TestWebReading.test_network_error_is_wrapped) ... ok
+test_reads_page_text_and_sets_timeout (test_main.TestWebReading.test_reads_page_text_and_sets_timeout) ... ok
+test_rejects_invalid_urls (test_main.TestWebReading.test_rejects_invalid_urls) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
