@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<clinic name="Городская поликлиника № 12">
+  <specialties>
+    <specialty>
+      <id>1</id>
+      <name>Терапия</name>
+      <description>Первичная диагностика и лечение</description>
+    </specialty>
+    <specialty>
+      <id>2</id>
+      <name>Кардиология</name>
+      <description>Заболевания сердечно-сосудистой системы</description>
+    </specialty>
+  </specialties>
+  <departments>
+    <department>
+      <id>1</id>
+      <name>Терапевтическое отделение</name>
+      <room>Кабинет 214</room>
+    </department>
+    <department>
+      <id>2</id>
+      <name>Кардиологическое отделение</name>
+      <room>Кабинет 307</room>
+    </department>
+  </departments>
+  <patients>
+    <patient>
+      <id>1</id>
+      <full_name>Иванов Иван Иванович</full_name>
+      <birth_date>1998-04-12</birth_date>
+      <phone>+7-900-111-22-33</phone>
+      <policy_number>0000 111111</policy_number>
+    </patient>
+    <patient>
+      <id>2</id>
+      <full_name>Петрова Анна Сергеевна</full_name>
+      <birth_date>1985-11-03</birth_date>
+      <phone>+7-900-222-33-44</phone>
+      <policy_number>0000 222222</policy_number>
+    </patient>
+  </patients>
+  <doctors>
+    <doctor>
+      <id>1</id>
+      <full_name>Смирнова Елена Викторовна</full_name>
+      <specialty_id>1</specialty_id>
+      <department_id>1</department_id>
+      <office_hours>Пн–Пт, 08:00–14:00</office_hours>
+    </doctor>
+    <doctor>
+      <id>2</id>
+      <full_name>Кузнецов Павел Андреевич</full_name>
+      <specialty_id>2</specialty_id>
+      <department_id>2</department_id>
+      <office_hours>Пн–Чт, 14:00–19:00</office_hours>
+    </doctor>
+  </doctors>
+  <appointments>
+    <appointment>
+      <id>1</id>
+      <patient_id>1</patient_id>
+      <doctor_id>1</doctor_id>
+      <start_at>2026-11-02 09:30</start_at>
+      <purpose>Плановый осмотр</purpose>
+      <status>Запланирован</status>
+    </appointment>
+    <appointment>
+      <id>2</id>
+      <patient_id>2</patient_id>
+      <doctor_id>2</doctor_id>
+      <start_at>2026-11-02 15:00</start_at>
+      <purpose>Консультация кардиолога</purpose>
+      <status>Запланирован</status>
+    </appointment>
+  </appointments>
+  <medical_records>
+    <medical_record>
+      <id>1</id>
+      <appointment_id>1</appointment_id>
+      <diagnosis>ОРВИ (предварительно)</diagnosis>
+      <recommendations>Контроль состояния у лечащего врача</recommendations>
+      <created_at>2026-11-02</created_at>
+    </medical_record>
+  </medical_records>
+  <prescriptions>
+    <prescription>
+      <id>1</id>
+      <record_id>1</record_id>
+      <medication>Пример препарата</medication>
+      <dosage>По назначению врача</dosage>
+      <duration>Согласно назначению</duration>
+    </prescription>
+  </prescriptions>
+  <diagnoses>
+    <diagnosis>
+      <id>1</id>
+      <name>ОРВИ</name>
+      <description>Учебный пример записи диагноза</description>
+    </diagnosis>
+    <diagnosis>
+      <id>2</id>
+      <name>Профилактический осмотр</name>
+      <description>Учебный пример</description>
+    </diagnosis>
+  </diagnoses>
+  <services>
+    <service>
+      <id>1</id>
+      <name>Первичный приём терапевта</name>
+      <price>1200.0</price>
+      <description>Демонстрационная стоимость</description>
+    </service>
+    <service>
+      <id>2</id>
+      <name>Консультация кардиолога</name>
+      <price>1800.0</price>
+      <description>Демонстрационная стоимость</description>
+    </service>
+  </services>
+  <schedules>
+    <schedule>
+      <id>1</id>
+      <doctor_id>1</doctor_id>
+      <weekdays>Пн–Пт</weekdays>
+      <start_time>08:00</start_time>
+      <end_time>14:00</end_time>
+    </schedule>
+    <schedule>
+      <id>2</id>
+      <doctor_id>2</doctor_id>
+      <weekdays>Пн–Чт</weekdays>
+      <start_time>14:00</start_time>
+      <end_time>19:00</end_time>
+    </schedule>
+  </schedules>
+</clinic>
